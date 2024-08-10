@@ -1,0 +1,245 @@
+/* News Item Styles */
+.news-item {
+  border: 1px solid #0b0000;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #eef4f4; /* Change this to your desired background color */
+  display: flex;
+  flex-direction: column; /* Ensure children stack vertically */
+}
+
+.news-item:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Body Styles */
+.card-body {
+  padding: 20px;
+  height: 100%; /* Set a fixed height for the card body */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* News Icon Styles */
+.news-icon {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.news-item:hover .news-icon {
+  transform: scale(1.2);
+}
+
+/* Read More/Less Button Styles */
+.read-more-btn,
+.read-less-btn {
+  background-color: #61dafb;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px; /* Adjusted margin */
+  font-size: 14px;
+  transition: background-color 0.3s; /* Added a smooth transition effect */
+}
+
+.read-more-btn:hover,
+.read-less-btn:hover {
+  background-color: #ceeaf9; /* Adjusted hover color */
+}
+
+.comment-section-wrapper {
+  padding: 10px; /* Adjust the padding as needed */
+  background-color: #a1b9d1; /* Optional background color */
+}
+
+/* Dark Mode Styles */
+.dark-mode .news-item {
+  background-color: #333; /* Dark background color */
+  color: #ddd; /* Light text color for dark mode */
+}
+
+.page-container {
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  position: relative;
+}
+
+.blurred-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(5px); /* Adjust the blur effect as needed */
+  z-index: -1;
+}
+
+.light-mode .page-container {
+  background-color: #d61111; /* Add your preferred light background color */
+}
+
+.dark-mode .page-container {
+  background-color: #121212; /* Add your preferred dark background color */
+}
+/* Add styles for social buttons */
+.social-buttons {
+  display: flex;
+  gap: 10px; /* Adjust the gap between buttons as needed */
+}
+
+.btn-social {
+  padding: 8px 16px; /* Adjust padding for better appearance */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.btn-twitter {
+  background-color: #1da1f2; /* Twitter blue color */
+  color: #fff;
+}
+
+.btn-facebook {
+  background-color: #3b5998; /* Facebook blue color */
+  color: #fff;
+}
+
+/* Adjust card styles for better alignment */
+.news-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure the card takes full height */
+}
+
+.card-body {
+  flex-grow: 1; /* Allow card body to grow to fill available space */
+}
+
+/* About.css */
+
+.about-container {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Text color */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+project-description {
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.members-container {
+  display: flex;
+  gap: 20px;
+}
+
+.member {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background for members */
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Add more styles as needed */
+/* About.css */
+.about-container {
+  position: relative;
+  height: 100vh; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.content {
+  z-index: 1;
+  text-align: left;
+  color: #fff; /* Text color */
+  padding: 40px; /* Adjust padding as needed */
+}
+
+.about-heading {
+  font-size: 10em; /* Adjust font size as needed */
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.project-description,
+.developers-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+h2, h3 {
+  font-size: 2em; /* Adjust font size as needed */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em; /* Adjust font size as needed */
+  line-height: 1.6;
+}
+/* About.css */
+/* ... (previous styles) */
+
+.developers-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photos-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.developer-photo {
+  width: 80px; /* Adjust the width of the photos as needed */
+  height: 80px; /* Adjust the height of the photos as needed */
+  border-radius: 50%; /* Make the photos circular */
+  margin-left: 10px; /* Adjust the margin between photos as needed */
+}
+
+/* ... (previous styles) */
+
+
